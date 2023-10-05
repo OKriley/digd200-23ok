@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'Redacted Script';
+  src: url('../fonts/RedactedScript-Light.ttf') format('truetype');
+}
+/* just an example of how to load a local true-type font */
+.redacted {
+    font-family: 'Redacted Script', cursive;
+font-size:2rem;
+}
+body{
+--my-brand-color: green;
+}
+
+.myplaceholder {
+    height:33.33vh;
+    background:#eee;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.demo {
+  margin: 0 auto;
+  padding-top: 32px;
+  max-width: 640px;
+  width: 94%;
+}
+
+.demo h1 {
+  margin-top: 0;
+}
+
+/**
+ * Footer Styles
+ */
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
