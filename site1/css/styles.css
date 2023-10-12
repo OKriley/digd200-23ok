@@ -137,3 +137,7 @@ ul {
     color: black;
     margin: auto;
 }
+
+* {font-family: 'Noto Serif', serif;}
+p{font-weight: 300}
+h1, h2, h3 {font-family: 'Peralta', serif;}
