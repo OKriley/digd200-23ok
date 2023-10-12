@@ -1,10 +1,50 @@
-<div class="container text-center">
-  <div class="row">
-    <div class="col-sm-6"><img src="images/download1.jpg" class="img-fluid"></div>
-    <div class="col-sm-6">some content</div>
-  </div>
- 
+<div class="container mt-3">
+    <div class="rowsection section1">
+      <div class= "col-md-6">
+          <img src="images/boutique.jpeg" class="img-fluid">
+      </div>
+        <div class= "col-md-6">
+            <div class= "info">
+                <h1>Welcome!</h1>
+                <br>
+                <p>At On A Whim Boutique, we're always getting new items coming into our store.</p>
+            <div class= "more">
+                <button
+            class="btn btn-outline-secondary"
+            href="#"
+            @click.prevent="changeContent('products', 'Products')"
+            :class="{'active': currentPage === 'products'}"
+            type="button"
+          >
+            Products
+          </button>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<div class="rowsection section2">
+    <div class= "col-md-6">
+            <div class= "info">
+                <h1>Est. 2008</h1>
+                <br>
+                <p>We opened our store in the heart of Doylestown with the hope of helping people find their style.</p>
+            <div class= "more">
+                <button
+            class="btn btn-outline-secondary"
+            href="#"
+            @click.prevent="changeContent('about-us', 'About Us')"
+            :class="{'active': currentPage === 'about-us'}"
+            type="button"
+          >
+            About Us
+          </button>
+            </div>
+        </div>
+    </div>
+      <div class= "col-md-6">
+          <img src="images/town.jpeg" class="img-fluid">
+      </div>
 </div>
 
-
-
+</div>

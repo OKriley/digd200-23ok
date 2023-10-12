@@ -2,18 +2,31 @@
   font-family: 'Redacted Script';
   src: url('../fonts/RedactedScript-Light.ttf') format('truetype');
 }
-/* just an example of how to load a local true-type font */
-.redacted {
-    font-family: 'Redacted Script', cursive;
-font-size:2rem;
-}
-body{
---my-brand-color: green;
-}
 
 .myplaceholder {
     height:33.33vh;
     background:#eee;
+}
+
+.navbar-brand img {
+    height:70px
+}
+
+.container-lg, .mt-3{
+    max-width: 99.2%;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: -20px;
+}
+
+.rowsection {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
 }
 
 html {
@@ -46,10 +59,6 @@ body {
   margin-top: 0;
 }
 
-/**
- * Footer Styles
- */
-
 .footer {
   position: absolute;
   right: 0;
@@ -58,4 +67,73 @@ body {
   padding: 1rem;
   background-color: #efefef;
   text-align: center;
+}
+
+.info {
+    max-width: 400px;
+    margin: auto;
+    padding: 25px 15px;
+}
+
+.info, .productsheading > * {
+    text-align: center;
+}
+
+.section1-link > button {
+  margin: 0 auto;
+  display: block;
+  color: white;
+  border: solid 1px white;
+}
+
+.productsheading {
+    background-color: floralwhite;
+    padding: 25px;
+    margin: auto;
+    max-width: 1,000px;
+}
+
+.contactparagraph {
+    font-size: 40px;
+}
+
+ul {
+    text-align: center;
+    list-style-position: inside;
+}
+
+.section1 {
+    background-color: #F1DCDC;
+    padding: 15px;
+} 
+
+.section1 > div{
+    padding: 10px;
+    align-content: center;
+    color: black;
+    margin: auto;
+}
+
+.section2 {
+    background-color: floralwhite;
+    padding: 15px;
+} 
+
+.section2 > div{
+    padding: 10px;
+    align-content: center;
+    color: black;
+    margin: auto;
+}
+
+.section3 {
+    background-color: #BD9D9D;
+    padding: 15px;
+} 
+
+.section3 > div{
+    padding: 10px;
+    align-content: center;
+    color: black;
+    margin: auto;
 }
