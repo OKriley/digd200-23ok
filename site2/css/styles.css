@@ -6,123 +6,175 @@
     font-weight: 200;
 }
 
-h1, h2, h3 {
-    font-weight: 700;
-}
 /* css custom properties */
 :root {   
- --my-brand-color: #EB8D1F;   
- --my-special-btn-color: #fff;
+ --my-brand-color:#EB8D1F;   
+ --my-special-btn-color:#fff;
  --my-special-search-btn-background-color:#C63D30;   
-    --my-accent-color-light: #FFB763;
+    --my-accent-color-light:#FFB763;
     --my-accent-color-dark: royalblue;
  /*--bs-dark-rgb: 25,135,84 !important; */
-
 }
+
+/* microinteractions */
 .hvr-underline-from-center:before {
-  background: #EB8D1F;
+  background:#EB8D1F;
   height: 2px;
 }
-/* important: change this value to the computed height of your nav with your desired logo in it*/
+
+/* important: change this value to the computed height of your nav with your desired logo in it */
 header {
-height: 90px;  
+    height: 105px;  
 }
 
+/* I DON'T KNOW WHAT THIS DOES (used in index) */
 .myplaceholder {
-    background: #eee;
+    background:#eee;
     height: 33vh;
 }
+
+/* navbar color */
 .my-light-navbar {
     background:#fff;
 }
+
+/* navbar logo size */
+a.navbar-brand img{
+    height: 80px;
+}
+
+/* I DON'T KNOW WHAT THIS DOES */
 nav[data-bs-theme="dark"]{
   background:var(--my-brand-color); 
 }
 
+/* navbar button */
 .btn-outline-success {
     color:var(--my-special-btn-color);
     background: var(--my-special-search-btn-background-color);
     border-color: var(--my-special-btn-color);
 }
+
+/* navbar button hover */
 .btn-outline-success:hover{
-   background:var(--my-special-btn-color);
- color: var(--my-special-search-btn-background-color);
+    background:var(--my-special-btn-color);
+    color: var(--my-special-search-btn-background-color);
     color:var();
+}
+
+/* selected navbar tab line weight */
+a.active {
+  border-bottom: 1px solid var(--my-brand-color) ;
 }
 
 
 
+/* primary button colors */
 .btn-primary {
     background:var(--my-brand-color);
     border:var(--my-brand-color);
     color:ivory;
 }
-.btn-primary:hover, .btn-primary:first-child:active{
+.btn-primary:hover, .btn-primary:first-child:active {
     background:var(--my-accent-color-light);
     color:var(--my-special-btn-color);
 }
 
 .btn-primary:focus {
-     background:var(--bs-teal);
+    background:#CB730F;
     border:var(--my-brand-color);
-    box-shadow: 0 0 0 .25rem rgba(25,135,84,.5);
-        color:var(--my-special-btn-color);
+    box-shadow: 0 0 0 .25rem #C1544B;
+    color:var(--my-special-btn-color);
+}
+/* end primary button colors */
+
+
+
+/* heading weights */
+h1, h2, h3 {
+    font-weight: 700;
 }
 
-
-a.active {
-  border-bottom: 1px solid var(--my-brand-color) ;
-}
-
+/* heading color */
 h1 {
     color:var(--my-brand-color);
 }
 
-footer, i {
-	color:var(--my-brand-color);
-} 
-
+/* I DON'T KNOW WHAT THIS DOES */
 h1 teaser, teaser {
     color:white;
 }
 
+/* footer copyright and icons color */
+footer, i {
+	color:var(--my-brand-color);
+}
 
+/* "Contact Us" page formatting */
 .rowsection {
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
     display: flex;
     flex-wrap: wrap;
-    margin-top: calc(-1 * var(--bs-gutter-y));
-    margin-right: calc(-.5 * var(--bs-gutter-x));
-    margin-left: calc(-.5 * var(--bs-gutter-x));
 }
     
+/* "Contact Us" page text box */
 .section2 {
-    background-color: floralwhite;
+    background-color: white;
     padding: 15px;
 } 
     
+/* "Contact Us" page padding around text */
 .info {
     max-width: 400px;
     margin: auto;
     padding: 25px 15px;
 }
    
-a.navbar-brand img{
-    height: 80px;
-}
-
+/* "Index" page placeholder */
 .mybanner{
     height: 300px;
     background: url(../images/banner.jpg);
     background-size: cover;
     background-position: center;
 }
-  
-.mybanner h1{
-   
+
+/* "Index" page transparent text box */
+.teaserbox {
+    background: rgba(255,255,255,.7)
 }
 
-.teaserbox {
-    background: rgba(255,255,255,.6)
+/* "Our Team" background box color */
+.boxcolor {
+    background-color: white !important;
+}
+
+/* "Our Story" photo position */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* "Index" & "Our Story" text padding */
+.padding {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+/* "Our Story" Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+
+/* "Our Story" Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
